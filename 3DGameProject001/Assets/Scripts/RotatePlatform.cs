@@ -23,13 +23,13 @@ public class RotatePlatform : MonoBehaviour
             {
                 
                 spin.x += Input.GetAxis("Mouse X");
-                transform.localRotation = Quaternion.Euler(0f, -spin.x, 0f);
-                Debug.Log("column spinning!");
+                transform.localRotation = Quaternion.Euler(0f, -spin.x*3, 0f);
+                //Debug.Log("column spinning!");
 
             }
             else
             {
-                Debug.Log("column stopped!!");
+                //Debug.Log("column stopped!!");
             }
 
     }
